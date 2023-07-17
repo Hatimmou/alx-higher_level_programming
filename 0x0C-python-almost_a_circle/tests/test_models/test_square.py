@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # test_square.py
-# Brennan D Baraban <375@holbertonschool.com>
 """Defines unittests for models/square.py.
 
 Unittest classes:
@@ -73,6 +72,7 @@ class TestSquare_instantiation(unittest.TestCase):
         s = Square(4, 1, 9, 2)
         s.size = 8
         self.assertEqual(8, s.width)
+
         s = Square(10, 10, 10, 10)
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             s.update(89, "invalid", 2, "invalid")
