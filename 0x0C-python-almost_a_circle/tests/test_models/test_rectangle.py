@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # test_rectangle.py
+# Brennan D Baraban <375@holbertonschool.com>
 """Defines unittests for models/rectangle.py.
 
 Unittest classes:
@@ -72,7 +73,6 @@ class TestRectangle_instantiation(unittest.TestCase):
     def test_y_private(self):
         with self.assertRaises(AttributeError):
             print(Rectangle(5, 5, 0, 0, 1).__y)
-
 class TestRectangle_update_kwargs(unittest.TestCase):
     """Unittests for testing update kwargs method of the Rectangle class."""
 
