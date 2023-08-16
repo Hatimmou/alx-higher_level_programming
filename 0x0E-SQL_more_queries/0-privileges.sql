@@ -1,3 +1,5 @@
--- Lists all privileges of the users user_0d_1 and user_0d_2.
-SHOW GRANTS FOR 'user_0d_1'@'localhost';
-SHOW GRANTS FOR 'user_0d_2'@'localhost';
+-- Grant all privileges to user_0d_1
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
+
+-- Grant all privileges to user_0d_2
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_2'@'localhost';
